@@ -14,13 +14,13 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name:  webapp-service
+            name: webapp-service
             port:
-              number: 80
-      - path: /otusapp/Victoria/
+              number: 8000
+      - path: /otusapp/Victoria/health
         pathType: Prefix
         backend:
           service:
             name: webapp-service
             port:
-              number: 80
+              number: 8000
